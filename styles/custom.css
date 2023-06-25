@@ -1,3 +1,24 @@
+/* Number */
+
+.slide::after {
+    position: absolute;
+    right: 16px;
+    bottom: 38px;
+    left: 0;
+    color: var(--color-light);
+    line-height: 18px;
+    text-align: center;
+    counter-increment: slide;
+    content: counter(slide);
+    top: unset;
+    box-sizing: unset;
+    padding-top: unset;
+    width: unset;
+    height: unset;
+    background-image: unset;
+    background-size: unset;
+}
+
 /* Overrides for the default Shower theme */
 
 .slide {
