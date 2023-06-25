@@ -1,0 +1,17 @@
+/* Overrides for the default Shower theme */
+
+.slide {
+    padding-top: 50px;
+}
+
+.toc a {
+    color: black;
+}
+
+.shower {
+    font-size: 24pt;
+}
+
+.small {
+    font-size: 20pt;
+}
