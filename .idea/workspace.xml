@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82f01143-1187-48ca-a84b-49ee150ca242" name="Changes" comment="Shape and footprint slides">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="82f01143-1187-48ca-a84b-49ee150ca242" name="Changes" comment="Evaluation slides">
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/custom.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +47,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687641105593</updated>
-      <workItem from="1687641106922" duration="28194000" />
+      <workItem from="1687641106922" duration="28678000" />
     </task>
     <task id="LOCAL-00001" summary="Add TOC slides">
       <created>1687691988562</created>
@@ -86,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687776207443</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Evaluation slides">
+      <created>1687782924348</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687782924348</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +114,7 @@
     <MESSAGE value="Problem statement and conclusion scenario slides" />
     <MESSAGE value="High-level architecture and form slides" />
     <MESSAGE value="Shape and footprint slides" />
-    <option name="LAST_COMMIT_MESSAGE" value="Shape and footprint slides" />
+    <MESSAGE value="Evaluation slides" />
+    <option name="LAST_COMMIT_MESSAGE" value="Evaluation slides" />
   </component>
 </project>
