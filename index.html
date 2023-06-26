@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shower Presentation Engine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <link rel="stylesheet" href="styles/custom.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+</head>
+<body class="shower list">
+
+<header class="caption">
+    <h1>A Three-Part View on Solid Web Forms</h1>
+    <p>Ieben Smessaert</p>
+</header>
+
+<section class="slide">
+    <br>
+    <h2>A Three-Part View on Solid Web Forms</h2>
+    <h3>Ieben Smessaert</h3>
+</section>
+
+<section class="slide gray toc" id="toc-problem-statement">
+    <ol>
+        <li><a href="#toc-problem-statement"><b>Problem Statement</b></a></li>
+        <li><a href="#toc-architecture">High-Level Architecture</a></li>
+        <li><a href="#toc-form">Form</a></li>
+        <li><a href="#toc-shape">Shape</a></li>
+        <li><a href="#toc-footprint">Footprint</a></li>
+        <li><a href="#toc-evaluation">Evaluation</a></li>
+        <li><a href="#toc-conclusion">Conclusion</a></li>
+    </ol>
+</section>
+
+<section class="slide">
+    <h2 style="margin-right: -1em; font-size: 45px; margin-bottom: 10px;">Problem Statement: Controllability &
+        Decentralization</h2>
+    <div style="text-align: center;">
+        <img src="images/controllability-decentralization.svg" width="90%" alt="">
+    </div>
+</section>
+
+<section class="slide">
+    <h2 style="margin-right: -1em; font-size: 45px; margin-bottom: 10px;">Problem Statement: Controllability &
+        Decentralization</h2>
+    <div style="text-align: center;">
+        <img src="images/controllability-decentralization-red.svg" width="90%" alt="">
+    </div>
+</section>
+
+<section class="slide">
+    <h2 style="margin-right: -1.5em; font-size: 48px; margin-bottom: 10px;">Problem Statement: Multiple Viewing
+        Environments</h2>
+    <div style="text-align: center;">
+        <img src="images/multiple-viewing-environments.svg" width="90%" alt="">
+    </div>
+</section>
+
+<section class="slide">
+    <h2 style="margin-right: -1.5em; font-size: 48px; margin-bottom: 10px;">Problem Statement: Multiple Viewing
+        Environments</h2>
+    <div style="text-align: center;">
+        <img src="images/multiple-viewing-environments-red.svg" width="90%" alt="">
+    </div>
+</section>
+
+<section class="slide">
+    <h2>Problem Statement: Reuse Existing Forms</h2>
+    <img src="images/reuse-existing-forms.svg" height="65%" alt="">
+</section>
+
+<section class="slide">
+    <h2>Problem Statement: Reuse Existing Forms</h2>
+    <img src="images/reuse-existing-forms-red.svg" height="65%" alt="">
+</section>
+
+<section class="slide">
+    <h2>Problem Statement: Prefill Data</h2>
+    <img src="images/prefill-data.svg" width="100%" alt="">
+</section>
+
+<section class="slide">
+    <h2>Problem Statement: Prefill Data</h2>
+    <img src="images/prefill-data-red.svg" width="100%" alt="">
+</section>
+
+<section class="slide gray toc" id="toc-architecture">
+    <ol>
+        <li><a href="#toc-problem-statement">Problem Statement</a></li>
+        <li><a href="#toc-architecture"><b>High-Level Architecture</b></a></li>
+        <li><a href="#toc-form">Form</a></li>
+        <li><a href="#toc-shape">Shape</a></li>
+        <li><a href="#toc-footprint">Footprint</a></li>
+        <li><a href="#toc-evaluation">Evaluation</a></li>
+        <li><a href="#toc-conclusion">Conclusion</a></li>
+    </ol>
+</section>
+
+<section class="slide">
+    <h2 style="margin-bottom: 0;">High-Level Architecture</h2>
+    <div style="text-align: center;">
+        <img src="images/currently-to-goal.png" width="90%" alt="">
+    </div>
+    <div class="columns two" style="text-align: center; margin-top: -45px;">
+        <p class="small"><i>Traditional single structure where all the data is defined using a single vocabulary</i></p>
+        <p class="small"><i>Three-part view, constisting of a form (for display), shape (for validation), and footprint
+            (for reasoning) part</i></p>
+    </div>
+</section>
+
+<section class="slide gray toc" id="toc-form">
+    <ol>
+        <li><a href="#toc-problem-statement">Problem Statement</a></li>
+        <li><a href="#toc-architecture">High-Level Architecture</a></li>
+        <li><a href="#toc-form"><b>Form</b></a></li>
+        <li><a href="#toc-shape">Shape</a></li>
+        <li><a href="#toc-footprint">Footprint</a></li>
+        <li><a href="#toc-evaluation">Evaluation</a></li>
+        <li><a href="#toc-conclusion">Conclusion</a></li>
+    </ol>
+</section>
+
+<section class="slide">
+    <h2>Drag-And-Drop Form Generator</h2>
+    <ul>
+        <li>Google Forms for RDF</li>
+        <li style="line-height: 1.1; margin-top: 15px;">UI to create declarative form<br>description</li>
+        <li style="line-height: 1.1; margin-top: 25px;">Single-line text, multi-line text,<br>date, choice, checkbox
+        </li>
+        <li style="margin-top: 15px;">SHACL, Solid-UI, RDF-Form</li>
+    </ul>
+    <img style="margin-top: 15px; margin-right: 15px;" class="place right top" src="images/form.png" width="10%" alt="">
+    <img class="place right bottom" src="images/FormGenerator.png" width="48%" alt="">
+</section>
+
+<section class="slide">
+    <img class="cover" src="images/FormGenerator-zoomin.png" alt="">
+</section>
+
+<section class="slide">
+    <h2 style="margin-bottom: 10px;">Declarative Form Renderer</h2>
+    <p>Display part not tied to one rendering environment</p>
+    <img class="place left" height="50%" style="top: 58%; margin-left: 5%" src="images/FormRenderer.png"
+         alt="FormRenderer">
+    <div class="place" style="margin-top: 60px; text-align: center;">
+        <p class="balloon next">Dataset<br>resource</p>
+        <p class="balloon next">N3 conversion<br>rules resource</p>
+        <p class="balloon next">&nbsp;Form description&nbsp;<br>resource</p>
+    </div>
+    <img class="place right" height="50%" style="top: 58%; margin-right: 5%" src="images/FormCli.png"
+         alt="FormRenderer">
+
+    <div class="columns three place bottom"
+         style="grid-column-gap: 0; grid-template-columns: 1fr .5fr 1fr; margin-bottom: 20px;">
+        <div style="text-align: center;">
+            <h2 style="margin-bottom: 0;">FormRenderer</h2>
+            <p class="small" style="margin-bottom: 0;">using HTML in the browser</p>
+        </div>
+        <div>
+        </div>
+        <div style="text-align: center;">
+            <h2 style="margin-bottom: 0;">FormCli</h2>
+            <p class="small" style="margin-bottom: 0;">text-based via the command line</p>
+        </div>
+    </div>
+
+    <img style="margin-top: 15px; margin-right: 15px;" class="place right top" src="images/form.png" width="10%" alt="">
+</section>
+
+<section class="slide gray toc" id="toc-shape">
+    <ol>
+        <li><a href="#toc-problem-statement">Problem Statement</a></li>
+        <li><a href="#toc-architecture">High-Level Architecture</a></li>
+        <li><a href="#toc-form">Form</a></li>
+        <li><a href="#toc-shape"><b>Shape</b></a></li>
+        <li><a href="#toc-footprint">Footprint</a></li>
+        <li><a href="#toc-evaluation">Evaluation</a></li>
+        <li><a href="#toc-conclusion">Conclusion</a></li>
+    </ol>
+</section>
+
+<section class="slide">
+    <h2 style="margin-bottom: 10px;">Schema Alignment</h2>
+    <ul>
+        <li>Mapping of schema
+            <ul>
+                <li class="nested">Real decoupled solution</li>
+                <li class="nested">Same description with<br>multiple different apps</li>
+            </ul>
+        </li>
+        <li>To-do app
+            <ul>
+                <li class="nested">First use case</li>
+                <li class="nested">Need for policies</li>
+            </ul>
+        </li>
+        <li>FormRenderer
+            <ul>
+                <li class="nested">Supports any schema<br>compatible with Solid-UI</li>
+            </ul>
+        </li>
+    </ul>
+    <img class="place right" src="images/TAS.gif" height="100%" alt="">
+    <img style="margin-top: 5px; margin-left: 5px;" class="place left top" src="images/shape.png" width="8%" alt="">
+</section>
+
+<section class="slide gray toc" id="toc-footprint">
+    <ol>
+        <li><a href="#toc-problem-statement">Problem Statement</a></li>
+        <li><a href="#toc-architecture">High-Level Architecture</a></li>
+        <li><a href="#toc-form">Form</a></li>
+        <li><a href="#toc-shape">Shape</a></li>
+        <li><a href="#toc-footprint"><b>Footprint</b></a></li>
+        <li><a href="#toc-evaluation">Evaluation</a></li>
+        <li><a href="#toc-conclusion">Conclusion</a></li>
+    </ol>
+</section>
+
+<section class="slide">
+    <h2>Declarative Submission With Reasoning</h2>
+    <ul>
+        <li>Declarative description of what should happen</li>
+        <li>Policies
+            <ul>
+                <li class="nested">Redirect, HTTP Request, ...</li>
+                <li class="nested">Rule language: N3</li>
+                <li class="nested">Policy language: FnO</li>
+            </ul>
+        </li>
+        <li>N3 executed by reasoner</li>
+    </ul>
+
+    <pre class="place right bottom">
+        <code style="font-size: 13pt;">@prefix ex: &lt;http://example.org/&gt; .</code>
+        <code style="font-size: 13pt;">@prefix pol: &lt;https://www.example.org/ns/policy#&gt; .</code>
+        <code style="font-size: 13pt;">@prefix fno: &lt;https://w3id.org/function/ontology#&gt;.</code>
+        <code>{</code>
+        <code>  ?id ex:event ex:Submit.</code>
+        <code>} => {</code>
+        <code>  ex:HttpPolicy pol:policy [</code>
+        <code>    a fno:Execution ;</code>
+        <code>    fno:executes ex:httpRequest ;</code>
+        <code>    ex:method "POST" ;</code>
+        <code>    ex:url &lt;https://httpbin.org/post&gt; ;</code>
+        <code>    ex:contentType "application/ld+json"</code>
+        <code>  ].</code>
+        <code>}.</code>
+    </pre>
+
+    <img style="margin-top: 15px; margin-right: 15px;" class="place right top" src="images/footprint.png" width="6%"
+         alt="">
+</section>
+
+<section class="slide">
+    <h2 style="margin-bottom: 10px;">Uniform Reasoner Interface</h2>
+    <ul>
+        <li>Easily switch reasoning implementations
+            <ul>
+                <li class="nested">EYE</li>
+            </ul>
+        </li>
+        <li>Reasoner app</li>
+    </ul>
+
+    <pre class="place bottom" style="margin-bottom: 45px;">
+        <code>import { Quad } from '@rdfjs/types';</code>
+        <code>{</code>
+        <code>export interface IQueryOptions {</code>
+        <code>  blogic?: boolean;</code>
+        <code>  outputType?: 'string' | 'quads'</code>
+        <code>  output?: undefined |'derivations'|'deductive_closure'|'deductive_closure_plus_rules'|<br>'grounded_deductive_closure_plus_rules'</code>
+        <code>}</code>
+        <code>declare module "eye-mock" {</code>
+        <code>  export function n3reasoner(data: Quad[] | string, query?: Quad[] | string | undefined,<br> options?: IQueryOptions): Promise&lt;Quad[] | string&gt;;</code>
+        <code>}</code>
+    </pre>
+
+    <img style="margin-top: 15px; margin-right: 15px;" class="place right top" src="images/footprint.png" width="6%"
+         alt="">
+</section>
+
+<section class="slide">
+    <h2>Uniform Reasoner<br>Interface</h2>
+
+    <ul>
+        <li style="line-height: 1;">Easily switch reasoning<br>implementations
+            <ul>
+                <li class="nested">EYE</li>
+            </ul>
+        </li>
+        <li>Reasoner app</li>
+    </ul>
+
+    <img class="place right" src="images/reasoner.gif" height="100%" alt="">
+
+    <img style="margin-top: 15px; margin-left: 15px;" class="place left top" src="images/footprint.png" width="6%"
+         alt="">
+</section>
+
+<section class="slide gray toc" id="toc-evaluation">
+    <ol>
+        <li><a href="#toc-problem-statement">Problem Statement</a></li>
+        <li><a href="#toc-architecture">High-Level Architecture</a></li>
+        <li><a href="#toc-form">Form</a></li>
+        <li><a href="#toc-shape">Shape</a></li>
+        <li><a href="#toc-footprint">Footprint</a></li>
+        <li><a href="#toc-evaluation"><b>Evaluation</b></a></li>
+        <li><a href="#toc-conclusion">Conclusion</a></li>
+    </ol>
+</section>
+
+<section class="slide">
+    <h2>Evaluation</h2>
+    <ul>
+        <li>Different implementations show feasibility in practice</li>
+        <li>User study
+            <ul>
+                <li class="nested">Participants provided with scenario</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>User Feedback</h2>
+    <div class="columns two" style="text-align: center; width: 120%; margin-left: -80px;">
+        <div>
+            <p class="green-balloon">The FormGenerator app is easy to use, especially because of the drag-and-drop
+                functionality</p>
+            <p class="green-balloon">The FormRenderer app is straightforward to use, easy to use, and clear</p>
+            <p class="green-balloon">I did not notice that the app is using Solid and Linked Data behind the scenes</p>
+            <p class="green-balloon">I was unaware that schema alignment tasks were being performed</p>
+        </div>
+        <div class="next">
+            <p class="red-balloon" style="margin-top: 70px;">As a restaurant owner, I don't want to know what bindings are</p>
+            <p class="red-balloon" style="margin-top: 50px;">"min count" and "max count" are confusing in the SHACL forms</p>
+            <p class="red-balloon" style="margin-top: 50px;">It is not entirely clear what the Subject URI is used for</p>
+        </div>
+    </div>
+</section>
+
+<section class="slide" style="padding-right: 75px;">
+    <h2>Evaluation</h2>
+    <ul>
+        <li style="color: grey">Different implementations show feasibility in practice</li>
+        <li style="color: grey">User study
+            <ul>
+                <li class="nested">Participants provided with scenario</li>
+                <li class="nested" style="color: black">FormGenerator is for technical people
+                    <ul>
+                        <li class="nested-2">Some difficulties with the understanding of bindings</li>
+                        <li class="nested-2">6 out of 8 people were able to create the form</li>
+                    </ul>
+                </li>
+                <li class="nested" style="color: black">FormRenderer is for everyone!
+                    <ul>
+                        <li class="nested-2">All participants were able to use the app without any problems</li>
+                    </ul>
+                </li>
+                <li class="nested" style="color: black">Unaware that schema alignment tasks, Solid and Linked Data is used</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section class="slide gray toc" id="toc-conclusion">
+    <ol>
+        <li><a href="#toc-problem-statement">Problem Statement</a></li>
+        <li><a href="#toc-architecture">High-Level Architecture</a></li>
+        <li><a href="#toc-form">Form</a></li>
+        <li><a href="#toc-shape">Shape</a></li>
+        <li><a href="#toc-footprint">Footprint</a></li>
+        <li><a href="#toc-evaluation">Evaluation</a></li>
+        <li><a href="#toc-conclusion"><b>Conclusion</b></a></li>
+    </ol>
+</section>
+
+<section class="slide">
+    <h2>Demo?</h2>
+
+    <ul>
+        <li>Reasoner app</li>
+        <li>To-do app</li>
+        <li>FormGenerator</li>
+        <li>FormRenderer</li>
+        <li>FormCli</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>Open-Source Contributions</h2>
+
+    <ul>
+        <li class="nested"><a href="https://github.com/eyereasoner/eye-js/pull/6">eyereasoner/eye-js#6</a>
+            <ul>
+                <li class="nested-2">Added temporary fix to resolve bug that prevented the bundled version to work</li>
+            </ul>
+        </li>
+        <li class="nested"><a href="https://github.com/eyereasoner/eye-js/pull/89">eyereasoner/eye-js#89</a>
+            <ul>
+                <li class="nested-2">Implementation of Uniform Reasoner Interface</li>
+            </ul>
+        </li>
+        <li class="nested"><a href="https://github.com/eyereasoner/eye/commit/a8772dfeef81ae12bbdc7db13ae7f1c1d37a7446">eyereasoner/eye#a8772df</a></li>
+        <li class="nested"><a href="https://github.com/rubensworks/ScholarMarkdown/pull/30">rubensworks/ScholarMarkdown#30</a></li>
+        <li class="nested"><a href="https://github.com/MellonScholarlyCommunication/spec-orchestrator/pull/19">MellonScholarlyCommunication/spec-orchestrator#19</a></li>
+        <li class="nested"><a href="https://github.com/mdn/content/pull/22126">mdn/content#22126</a></li>
+        <li class="nested"><a href="https://github.com/Robbe7730/ScholarMarkdownThesis/pulls?q=is%3Apr+author%3Asmessie+">Robbe7730/ScholarMarkdownThesis</a></li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2 style="margin-bottom: 10px;">Conclusion</h2>
+
+    <ul>
+        <li>Display part not tied to one rendering environment
+            <ul>
+                <li class="nested-2">FormRenderer + FormCli</li>
+            </ul>
+        </li>
+        <li>Declarative form descriptions can be produced
+            <ul>
+                <li class="nested-2">FormGenerator</li>
+            </ul>
+        </li>
+        <li>Schema alignment and footprint tasks
+            <ul>
+                <li class="nested-2">Declarative descriptions</li>
+                <li class="nested-2">To-do app + FormGenerator + renderer apps</li>
+            </ul>
+        </li>
+        <li>Easily switching between reasoners
+            <ul>
+                <li class="nested-2">Uniform reasoner interface</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2 style="margin-bottom: 10px;">Conclusion: Controllability & Decentralization</h2>
+    <div style="text-align: center;">
+        <img src="images/controllability-decentralization.svg" width="90%" alt="">
+    </div>
+</section>
+
+<section class="slide">
+    <h2 style="margin-bottom: 10px;">Conclusion: Controllability & Decentralization</h2>
+    <div style="text-align: center;">
+        <img src="images/controllability-decentralization-green.svg" width="90%" alt="">
+    </div>
+</section>
+
+<section class="slide">
+    <h2 style="margin-bottom: 10px;">Conclusion: Multiple Viewing Environments</h2>
+    <div style="text-align: center;">
+        <img src="images/multiple-viewing-environments.svg" width="90%" alt="">
+    </div>
+</section>
+
+<section class="slide">
+    <h2 style="margin-bottom: 10px;">Conclusion: Multiple Viewing Environments</h2>
+    <div style="text-align: center;">
+        <img src="images/multiple-viewing-environments-green.svg" width="90%" alt="">
+    </div>
+</section>
+
+<section class="slide">
+    <h2>Conclusion: Reuse Existing Forms</h2>
+    <img src="images/reuse-existing-forms.svg" height="65%" alt="">
+</section>
+
+<section class="slide">
+    <h2>Conclusion: Reuse Existing Forms</h2>
+    <img src="images/reuse-existing-forms-green.svg" height="65%" alt="">
+</section>
+
+<section class="slide">
+    <h2>Conclusion: Prefill Data</h2>
+    <img src="images/prefill-data.svg" width="100%" alt="">
+</section>
+
+<section class="slide">
+    <h2>Conclusion: Prefill Data</h2>
+    <img src="images/prefill-data-green.svg" width="100%" alt="">
+</section>
+
+<section class="slide">
+    <iframe class="place right top" src="https://thesis-demo.smessie.com" width="63%" height="70%"></iframe>
+
+    <img class="place left top" src="images/qr.png" style="margin-left: 15px; margin-top: 15px;" width="35%" alt="">
+
+    <div class="place left bottom" style="margin-left: 15px;">
+        <p class="footnote"><a href="https://formgenerator.smessie.com/">https://formgenerator.smessie.com/</a></p>
+        <p class="footnote"><a href="https://formrenderer.smessie.com/">https://formrenderer.smessie.com/</a></p>
+        <p class="footnote"><a href="https://github.com/smessie/FormCli">https://github.com/smessie/FormCli</a></p>
+        <p class="footnote"><a href="https://tas.smessie.com/">https://tas.smessie.com/</a></p>
+        <p class="footnote" style="margin-bottom: 1em !important;"><a href="https://reasoner.smessie.com/">https://reasoner.smessie.com/</a></p>
+    </div>
+
+    <div class="place right bottom" style="margin-right: 15px;">
+        <p class="footnote"><a href="mailto:Ieben.Smessaert@UGent.be">Ieben.Smessaert@UGent.be</a></p>
+        <p class="footnote">Supervisors: Ruben Verborgh,</p>
+        <p class="footnote">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ruben Taelman</p>
+        <p class="footnote">Counsellors: Patrick Hochstenbach,</p>
+        <p class="footnote" style="margin-bottom: 0.3em !important;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pieter Colpaert</p>
+    </div>
+</section>
+
+<footer class="badge">
+    <a href="https://github.com/smessie/ThesisPresentation">Fork me on GitHub</a>
+</footer>
+
+<div class="progress"></div>
+
+<script src="shower/shower.js"></script>
+<!-- Copyright © 2023 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
