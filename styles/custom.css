@@ -36,3 +36,19 @@
 .small {
     font-size: 20pt;
 }
+
+/* SVG images */
+
+iframe.image {
+    width: 100%;
+    height: 420px;
+}
+
+iframe {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+

@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82f01143-1187-48ca-a84b-49ee150ca242" name="Changes" comment="" />
+    <list default="true" id="82f01143-1187-48ca-a84b-49ee150ca242" name="Changes" comment="Put slide numbering at the bottom">
+      <change afterPath="$PROJECT_DIR$/images/FormCli.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/FormRenderer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/controllability-decentralization-green.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/controllability-decentralization-red.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/controllability-decentralization.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/multiple-viewing-environments-green.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/multiple-viewing-environments-red.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/multiple-viewing-environments.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/prefill-data-green.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/prefill-data-red.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/prefill-data.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/reuse-existing-forms-green.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/reuse-existing-forms-red.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/reuse-existing-forms.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/custom.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,10 +32,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2RfVQE5tf2RjUaROoXFNr9oEZ4U" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -41,11 +63,42 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687641105593</updated>
-      <workItem from="1687641106922" duration="5086000" />
+      <workItem from="1687641106922" duration="16799000" />
     </task>
+    <task id="LOCAL-00001" summary="Add TOC slides">
+      <created>1687691988562</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687691988562</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Put slide numbering at the bottom">
+      <created>1687699193513</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687699193513</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add TOC slides" />
+    <MESSAGE value="Put slide numbering at the bottom" />
+    <option name="LAST_COMMIT_MESSAGE" value="Put slide numbering at the bottom" />
   </component>
 </project>
