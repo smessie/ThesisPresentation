@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82f01143-1187-48ca-a84b-49ee150ca242" name="Changes" comment="Ending slide">
+    <list default="true" id="82f01143-1187-48ca-a84b-49ee150ca242" name="Changes" comment="Decrease margin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +48,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687641105593</updated>
-      <workItem from="1687641106922" duration="34519000" />
+      <workItem from="1687641106922" duration="36276000" />
     </task>
     <task id="LOCAL-00001" summary="Add TOC slides">
       <created>1687691988562</created>
@@ -105,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687790991763</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Decrease margin">
+      <created>1687792689251</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1687792689251</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +139,7 @@
     <MESSAGE value="Evaluation slides" />
     <MESSAGE value="Conclusion slides" />
     <MESSAGE value="Ending slide" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ending slide" />
+    <MESSAGE value="Decrease margin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Decrease margin" />
   </component>
 </project>
