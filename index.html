@@ -184,6 +184,31 @@
     </ol>
 </section>
 
+<section class="slide">
+    <h2 style="margin-bottom: 10px;">Schema Alignment</h2>
+    <ul>
+        <li>Mapping of schema
+            <ul>
+                <li class="nested">Real decoupled solution</li>
+                <li class="nested">Same description with<br>multiple different apps</li>
+            </ul>
+        </li>
+        <li>To-do app
+            <ul>
+                <li class="nested">First use case</li>
+                <li class="nested">Need for policies</li>
+            </ul>
+        </li>
+        <li>FormRenderer
+            <ul>
+                <li class="nested">Supports any schema<br>compatible with Solid-UI</li>
+            </ul>
+        </li>
+    </ul>
+    <img class="place right" src="images/TAS.gif" height="100%" alt="">
+    <img style="margin-top: 5px; margin-left: 5px;" class="place left top" src="images/shape.png" width="8%" alt="">
+</section>
+
 <section class="slide gray toc" id="toc-footprint">
     <ol>
         <li><a href="#toc-problem-statement">Problem Statement</a></li>
@@ -194,6 +219,87 @@
         <li><a href="#toc-evaluation">Evaluation</a></li>
         <li><a href="#toc-conclusion">Conclusion</a></li>
     </ol>
+</section>
+
+<section class="slide">
+    <h2>Declarative Submission With Reasoning</h2>
+    <ul>
+        <li>Declarative description of what should happen</li>
+        <li>Policies
+            <ul>
+                <li class="nested">Redirect, HTTP Request, ...</li>
+                <li class="nested">Rule language: N3</li>
+                <li class="nested">Policy language: FnO</li>
+            </ul>
+        </li>
+        <li>N3 executed by reasoner</li>
+    </ul>
+
+    <pre class="place right bottom">
+        <code style="font-size: 13pt;">@prefix ex: &lt;http://example.org/&gt; .</code>
+        <code style="font-size: 13pt;">@prefix pol: &lt;https://www.example.org/ns/policy#&gt; .</code>
+        <code style="font-size: 13pt;">@prefix fno: &lt;https://w3id.org/function/ontology#&gt;.</code>
+        <code>{</code>
+        <code>  ?id ex:event ex:Submit.</code>
+        <code>} => {</code>
+        <code>  ex:HttpPolicy pol:policy [</code>
+        <code>    a fno:Execution ;</code>
+        <code>    fno:executes ex:httpRequest ;</code>
+        <code>    ex:method "POST" ;</code>
+        <code>    ex:url &lt;https://httpbin.org/post&gt; ;</code>
+        <code>    ex:contentType "application/ld+json"</code>
+        <code>  ].</code>
+        <code>}.</code>
+    </pre>
+
+    <img style="margin-top: 15px; margin-right: 15px;" class="place right top" src="images/footprint.png" width="6%"
+         alt="">
+</section>
+
+<section class="slide">
+    <h2 style="margin-bottom: 10px;">Uniform Reasoner Interface</h2>
+    <ul>
+        <li>Easily switch reasoning implementations
+            <ul>
+                <li class="nested">EYE</li>
+            </ul>
+        </li>
+        <li>Reasoner app</li>
+    </ul>
+
+    <pre class="place bottom" style="margin-bottom: 45px;">
+        <code>import { Quad } from '@rdfjs/types';</code>
+        <code>{</code>
+        <code>export interface IQueryOptions {</code>
+        <code>  blogic?: boolean;</code>
+        <code>  outputType?: 'string' | 'quads'</code>
+        <code>  output?: undefined |'derivations'|'deductive_closure'|'deductive_closure_plus_rules'|<br>'grounded_deductive_closure_plus_rules'</code>
+        <code>}</code>
+        <code>declare module "eye-mock" {</code>
+        <code>  export function n3reasoner(data: Quad[] | string, query?: Quad[] | string | undefined,<br> options?: IQueryOptions): Promise&lt;Quad[] | string&gt;;</code>
+        <code>}</code>
+    </pre>
+
+    <img style="margin-top: 15px; margin-right: 15px;" class="place right top" src="images/footprint.png" width="6%"
+         alt="">
+</section>
+
+<section class="slide">
+    <h2>Uniform Reasoner<br>Interface</h2>
+
+    <ul>
+        <li style="line-height: 1;">Easily switch reasoning<br>implementations
+            <ul>
+                <li class="nested">EYE</li>
+            </ul>
+        </li>
+        <li>Reasoner app</li>
+    </ul>
+
+    <img class="place right" src="images/reasoner.gif" height="100%" alt="">
+
+    <img style="margin-top: 15px; margin-left: 15px;" class="place left top" src="images/footprint.png" width="6%"
+         alt="">
 </section>
 
 <section class="slide gray toc" id="toc-evaluation">

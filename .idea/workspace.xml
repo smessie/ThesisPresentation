@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82f01143-1187-48ca-a84b-49ee150ca242" name="Changes" comment="Problem statement and conclusion scenario slides">
-      <change afterPath="$PROJECT_DIR$/images/currently-to-goal.png" afterDir="false" />
+    <list default="true" id="82f01143-1187-48ca-a84b-49ee150ca242" name="Changes" comment="High-level architecture and form slides">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/custom.css" afterDir="false" />
@@ -50,7 +49,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687641105593</updated>
-      <workItem from="1687641106922" duration="20247000" />
+      <workItem from="1687641106922" duration="25105000" />
     </task>
     <task id="LOCAL-00001" summary="Add TOC slides">
       <created>1687691988562</created>
@@ -73,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687765212636</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="High-level architecture and form slides">
+      <created>1687768703237</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687768703237</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +100,7 @@
     <MESSAGE value="Add TOC slides" />
     <MESSAGE value="Put slide numbering at the bottom" />
     <MESSAGE value="Problem statement and conclusion scenario slides" />
-    <option name="LAST_COMMIT_MESSAGE" value="Problem statement and conclusion scenario slides" />
+    <MESSAGE value="High-level architecture and form slides" />
+    <option name="LAST_COMMIT_MESSAGE" value="High-level architecture and form slides" />
   </component>
 </project>

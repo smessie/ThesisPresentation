@@ -62,3 +62,18 @@ iframe {
     background-color: lightgrey;
     font-size: 22pt;
 }
+
+/* Nested lists */
+
+.nested {
+    font-size: 22pt;
+    line-height: 1.2;
+}
+
+/* Code blocks */
+
+code {
+    font-size: 15pt;
+    line-height: 1 !important;
+    letter-spacing: -1.5px;
+}
