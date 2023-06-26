@@ -54,14 +54,16 @@
 </section>
 
 <section class="slide">
-    <h2 style="margin-right: -1.5em; font-size: 48px; margin-bottom: 10px;">Problem Statement: Multiple Viewing Environments</h2>
+    <h2 style="margin-right: -1.5em; font-size: 48px; margin-bottom: 10px;">Problem Statement: Multiple Viewing
+        Environments</h2>
     <div style="text-align: center;">
         <img src="images/multiple-viewing-environments.svg" width="90%" alt="">
     </div>
 </section>
 
 <section class="slide">
-    <h2 style="margin-right: -1.5em; font-size: 48px; margin-bottom: 10px;">Problem Statement: Multiple Viewing Environments</h2>
+    <h2 style="margin-right: -1.5em; font-size: 48px; margin-bottom: 10px;">Problem Statement: Multiple Viewing
+        Environments</h2>
     <div style="text-align: center;">
         <img src="images/multiple-viewing-environments-red.svg" width="90%" alt="">
     </div>
@@ -99,6 +101,18 @@
     </ol>
 </section>
 
+<section class="slide">
+    <h2 style="margin-bottom: 0;">High-Level Architecture</h2>
+    <div style="text-align: center;">
+        <img src="images/currently-to-goal.png" width="90%" alt="">
+    </div>
+    <div class="columns two" style="text-align: center; margin-top: -45px;">
+        <p class="small"><i>Traditional single structure where all the data is defined using a single vocabulary</i></p>
+        <p class="small"><i>Three-part view, constisting of a form (for display), shape (for validation), and footprint
+            (for reasoning) part</i></p>
+    </div>
+</section>
+
 <section class="slide gray toc" id="toc-form">
     <ol>
         <li><a href="#toc-problem-statement">Problem Statement</a></li>
@@ -112,17 +126,37 @@
 </section>
 
 <section class="slide">
-    <h2>Declarative Form Renderer</h2>
+    <h2>Drag-And-Drop Form Generator</h2>
+    <ul>
+        <li>Google Forms for RDF</li>
+        <li style="line-height: 1.1; margin-top: 15px;">UI to create declarative form<br>description</li>
+        <li style="line-height: 1.1; margin-top: 25px;">Single-line text, multi-line text,<br>date, choice, checkbox
+        </li>
+        <li style="margin-top: 15px;">SHACL, Solid-UI, RDF-Form</li>
+    </ul>
+    <img style="margin-top: 15px; margin-right: 15px;" class="place right top" src="images/form.png" width="10%" alt="">
+    <img class="place right bottom" src="images/FormGenerator.png" width="48%" alt="">
+</section>
+
+<section class="slide">
+    <img class="cover" src="images/FormGenerator-zoomin.png" alt="">
+</section>
+
+<section class="slide">
+    <h2 style="margin-bottom: 10px;">Declarative Form Renderer</h2>
     <p>Display part not tied to one rendering environment</p>
-    <img class="place left" height="50%" style="top: 60%; margin-left: 5%" src="images/FormRenderer.png"
+    <img class="place left" height="50%" style="top: 58%; margin-left: 5%" src="images/FormRenderer.png"
          alt="FormRenderer">
-    <div class="place next">
-        <p>Hi</p>
+    <div class="place" style="margin-top: 60px; text-align: center;">
+        <p class="balloon next">Dataset<br>resource</p>
+        <p class="balloon next">N3 conversion<br>rules resource</p>
+        <p class="balloon next">&nbsp;Form description&nbsp;<br>resource</p>
     </div>
-    <img class="place right" height="50%" style="top: 60%; margin-right: 5%" src="images/FormCli.png"
+    <img class="place right" height="50%" style="top: 58%; margin-right: 5%" src="images/FormCli.png"
          alt="FormRenderer">
 
-    <div class="columns three place bottom" style="grid-column-gap: 0; grid-template-columns: 1fr .5fr 1fr;">
+    <div class="columns three place bottom"
+         style="grid-column-gap: 0; grid-template-columns: 1fr .5fr 1fr; margin-bottom: 20px;">
         <div style="text-align: center;">
             <h2 style="margin-bottom: 0;">FormRenderer</h2>
             <p class="small" style="margin-bottom: 0;">using HTML in the browser</p>
@@ -134,6 +168,8 @@
             <p class="small" style="margin-bottom: 0;">text-based via the command line</p>
         </div>
     </div>
+
+    <img style="margin-top: 15px; margin-right: 15px;" class="place right top" src="images/form.png" width="10%" alt="">
 </section>
 
 <section class="slide gray toc" id="toc-shape">
