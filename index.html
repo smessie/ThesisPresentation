@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Shower Presentation Engine</title>
+    <title>A Three-Part View on Solid Web Forms</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
@@ -19,7 +19,7 @@
     <p>Ieben Smessaert</p>
 </header>
 
-<section class="slide">
+<section class="slide" id="title">
     <br>
     <h2>A Three-Part View on Solid Web Forms</h2>
     <h3>Ieben Smessaert</h3>
@@ -37,7 +37,7 @@
     </ol>
 </section>
 
-<section class="slide">
+<section class="slide" id="problem-statement-controllability-decentralization">
     <h2 style="margin-right: -1em; font-size: 45px; margin-bottom: 10px;">Problem Statement: Controllability &
         Decentralization</h2>
     <div style="text-align: center;">
@@ -45,7 +45,7 @@
     </div>
 </section>
 
-<section class="slide">
+<section class="slide" id="problem-statement-controllability-decentralization-needed">
     <h2 style="margin-right: -1em; font-size: 45px; margin-bottom: 10px;">Problem Statement: Controllability &
         Decentralization</h2>
     <div style="text-align: center;">
@@ -53,7 +53,7 @@
     </div>
 </section>
 
-<section class="slide">
+<section class="slide" id="problem-statement-multiple-viewing-environments">
     <h2 style="margin-right: -1.5em; font-size: 48px; margin-bottom: 10px;">Problem Statement: Multiple Viewing
         Environments</h2>
     <div style="text-align: center;">
@@ -61,7 +61,7 @@
     </div>
 </section>
 
-<section class="slide">
+<section class="slide" id="problem-statement-multiple-viewing-environments-needed">
     <h2 style="margin-right: -1.5em; font-size: 48px; margin-bottom: 10px;">Problem Statement: Multiple Viewing
         Environments</h2>
     <div style="text-align: center;">
@@ -69,22 +69,22 @@
     </div>
 </section>
 
-<section class="slide">
+<section class="slide" id="problem-statement-reuse-existing-forms">
     <h2>Problem Statement: Reuse Existing Forms</h2>
     <img src="images/reuse-existing-forms.svg" height="65%" alt="">
 </section>
 
-<section class="slide">
+<section class="slide" id="problem-statement-reuse-existing-forms-needed">
     <h2>Problem Statement: Reuse Existing Forms</h2>
     <img src="images/reuse-existing-forms-red.svg" height="65%" alt="">
 </section>
 
-<section class="slide">
+<section class="slide" id="problem-statement-prefill-data">
     <h2>Problem Statement: Prefill Data</h2>
     <img src="images/prefill-data.svg" width="100%" alt="">
 </section>
 
-<section class="slide">
+<section class="slide" id="problem-statement-prefill-data-needed">
     <h2>Problem Statement: Prefill Data</h2>
     <img src="images/prefill-data-red.svg" width="100%" alt="">
 </section>
@@ -101,7 +101,7 @@
     </ol>
 </section>
 
-<section class="slide">
+<section class="slide" id="high-level-architecture">
     <h2 style="margin-bottom: 0;">High-Level Architecture</h2>
     <div style="text-align: center;">
         <img src="images/currently-to-goal.png" width="90%" alt="">
@@ -125,7 +125,7 @@
     </ol>
 </section>
 
-<section class="slide">
+<section class="slide" id="formgenerator">
     <h2>Drag-And-Drop Form Generator</h2>
     <ul>
         <li>Google Forms for RDF</li>
@@ -138,11 +138,11 @@
     <img class="place right bottom" src="images/FormGenerator.png" width="48%" alt="">
 </section>
 
-<section class="slide">
+<section class="slide" id="form-generator-zoomin">
     <img class="cover" src="images/FormGenerator-zoomin.png" alt="">
 </section>
 
-<section class="slide">
+<section class="slide" id="form-renderer">
     <h2 style="margin-bottom: 10px;">Declarative Form Renderer</h2>
     <p>Display part not tied to one rendering environment</p>
     <img class="place left" height="50%" style="top: 58%; margin-left: 5%" src="images/FormRenderer.png"
@@ -184,7 +184,7 @@
     </ol>
 </section>
 
-<section class="slide">
+<section class="slide" id="schema-alignment">
     <h2 style="margin-bottom: 10px;">Schema Alignment</h2>
     <ul>
         <li>Mapping of schema
@@ -221,7 +221,7 @@
     </ol>
 </section>
 
-<section class="slide">
+<section class="slide" id="reasoning">
     <h2>Declarative Submission With Reasoning</h2>
     <ul>
         <li>Declarative description of what should happen</li>
@@ -256,7 +256,7 @@
          alt="">
 </section>
 
-<section class="slide">
+<section class="slide" id="uniform-reasoner-interface">
     <h2 style="margin-bottom: 10px;">Uniform Reasoner Interface</h2>
     <ul>
         <li>Easily switch reasoning implementations
@@ -284,7 +284,7 @@
          alt="">
 </section>
 
-<section class="slide">
+<section class="slide" id="reasoner-app">
     <h2>Uniform Reasoner<br>Interface</h2>
 
     <ul>
@@ -314,7 +314,7 @@
     </ol>
 </section>
 
-<section class="slide">
+<section class="slide" id="evaluation">
     <h2>Evaluation</h2>
     <ul>
         <li>Different implementations show feasibility in practice</li>
@@ -326,7 +326,7 @@
     </ul>
 </section>
 
-<section class="slide">
+<section class="slide" id="user-feedback">
     <h2>User Feedback</h2>
     <div class="columns two" style="text-align: center; width: 120%; margin-left: -80px;">
         <div>
@@ -344,7 +344,7 @@
     </div>
 </section>
 
-<section class="slide" style="padding-right: 75px;">
+<section class="slide" style="padding-right: 75px;" id="evaluation-conclusions">
     <h2 style="margin-bottom: 10px">Evaluation</h2>
     <ul>
         <li style="color: grey">Different implementations show feasibility in practice</li>
@@ -380,7 +380,7 @@
     </ol>
 </section>
 
-<section class="slide">
+<section class="slide" id="demo">
     <h2>Demo?</h2>
 
     <ul>
@@ -392,7 +392,7 @@
     </ul>
 </section>
 
-<section class="slide">
+<section class="slide" id="contributions">
     <h2>Open-Source Contributions</h2>
 
     <ul>
@@ -414,7 +414,7 @@
     </ul>
 </section>
 
-<section class="slide">
+<section class="slide" id="conclusion">
     <h2 style="margin-bottom: 10px;">Conclusion</h2>
 
     <ul>
@@ -442,55 +442,55 @@
     </ul>
 </section>
 
-<section class="slide">
+<section class="slide" id="conclusion-controllability-decentralization">
     <h2 style="margin-bottom: 10px;">Conclusion: Controllability & Decentralization</h2>
     <div style="text-align: center;">
         <img src="images/controllability-decentralization.svg" width="90%" alt="">
     </div>
 </section>
 
-<section class="slide">
+<section class="slide" id="conclusion-controllability-decentralization-fixed">
     <h2 style="margin-bottom: 10px;">Conclusion: Controllability & Decentralization</h2>
     <div style="text-align: center;">
         <img src="images/controllability-decentralization-green.svg" width="90%" alt="">
     </div>
 </section>
 
-<section class="slide">
+<section class="slide" id="conclusion-multiple-viewing-environments">
     <h2 style="margin-bottom: 10px;">Conclusion: Multiple Viewing Environments</h2>
     <div style="text-align: center;">
         <img src="images/multiple-viewing-environments.svg" width="90%" alt="">
     </div>
 </section>
 
-<section class="slide">
+<section class="slide" id="conclusion-multiple-viewing-environments-fixed">
     <h2 style="margin-bottom: 10px;">Conclusion: Multiple Viewing Environments</h2>
     <div style="text-align: center;">
         <img src="images/multiple-viewing-environments-green.svg" width="90%" alt="">
     </div>
 </section>
 
-<section class="slide">
+<section class="slide" id="conclusion-reuse-existing-forms">
     <h2>Conclusion: Reuse Existing Forms</h2>
     <img src="images/reuse-existing-forms.svg" height="65%" alt="">
 </section>
 
-<section class="slide">
+<section class="slide" id="conclusion-reuse-existing-forms-fixed">
     <h2>Conclusion: Reuse Existing Forms</h2>
     <img src="images/reuse-existing-forms-green.svg" height="65%" alt="">
 </section>
 
-<section class="slide">
+<section class="slide" id="conclusion-prefill-data">
     <h2>Conclusion: Prefill Data</h2>
     <img src="images/prefill-data.svg" width="100%" alt="">
 </section>
 
-<section class="slide">
+<section class="slide" id="conclusion-prefill-data-fixed">
     <h2>Conclusion: Prefill Data</h2>
     <img src="images/prefill-data-green.svg" width="100%" alt="">
 </section>
 
-<section class="slide">
+<section class="slide" id="end">
     <iframe class="place right top" src="https://thesis-demo.smessie.com" width="63%" height="70%"></iframe>
 
     <img class="place left top" src="images/qr.png" style="margin-left: 15px; margin-top: 15px;" width="35%" alt="">
