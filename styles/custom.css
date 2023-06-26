@@ -63,10 +63,33 @@ iframe {
     font-size: 22pt;
 }
 
+.green-balloon {
+    line-height: 1;
+    border-radius: 16px;
+    border: solid #585a5e;
+    color: #585a5e;
+    background-color: #93c47d;
+    font-size: 20pt;
+}
+
+.red-balloon {
+    line-height: 1;
+    border-radius: 16px;
+    border: solid #585a5e;
+    color: #585a5e;
+    background-color: #e19594;
+    font-size: 20pt;
+}
+
 /* Nested lists */
 
 .nested {
     font-size: 22pt;
+    line-height: 1.2;
+}
+
+.nested-2 {
+    font-size: 20pt;
     line-height: 1.2;
 }
 
